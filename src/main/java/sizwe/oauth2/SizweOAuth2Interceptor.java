@@ -28,6 +28,7 @@ public class SizweOAuth2Interceptor implements ClientHttpRequestInterceptor{
             HttpRequest request, byte[] body, ClientHttpRequestExecution execution)
             throws IOException {
         request.getHeaders().add(header, token.getTokenHeader());
+        request.getHeaders().add("correlation_id", java.util.UUID.randomUUID().toString());
         return execution.execute(request, body);
     }
     

@@ -22,7 +22,7 @@ public class TokenIntegrationTest {
     @Test
     public void getToken() throws URISyntaxException{
         SizweOAuth2Token token = new SizweOAuth2Token(
-                new URI("https://ffaargsizwe.eu.auth0.com/oauth/token"),
+                new URI("https://sizwe.eu.auth0.com/oauth/token"),
                 "https://api.sizweafrica.co.za",
                 SizweOauth2GrantTypes.CLIENT_CREDENTIALS,
                 "Y3DOXGuBMifw9xL4n2VL0lu6CcFGOPw2",
