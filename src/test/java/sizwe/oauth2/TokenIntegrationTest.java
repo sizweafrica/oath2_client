@@ -27,7 +27,6 @@ public class TokenIntegrationTest {
                 SizweOauth2GrantTypes.CLIENT_CREDENTIALS,
                 "Y3DOXGuBMifw9xL4n2VL0lu6CcFGOPw2",
                 "S8mozox7969iHBCIhwbBufzqDE4yGhgbZl1uEeOI0qSHkeP_qvPEFWnlBZxHeGVp", "write:address");
-        System.out.println(token.getTokenHeader());
         assertNotNull(token.getTokenHeader());
         token.getTokenHeader();
         token.getTokenHeader();

@@ -89,7 +89,6 @@ public class SizweOAuth2Token {
      */
     public String getTokenHeader() {
         if (token == null || LocalDateTime.now().isAfter(expiresAt)) {
-            System.out.println("Getting new Token!");
             if (restTemplate == null) {
                 restTemplate = new RestTemplate();
             }
@@ -105,7 +104,6 @@ public class SizweOAuth2Token {
             tokenType = response.getBody().getTokenType();
 
         }
-        System.out.println("Returning Token!");
         return tokenType + " " + token;
     }
 
